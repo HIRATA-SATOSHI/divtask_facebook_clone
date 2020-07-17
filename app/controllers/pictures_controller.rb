@@ -16,8 +16,7 @@ class PicturesController < ApplicationController
   end
 
   def create
-    @picture = Picture.new(picture_params)
-
+    @picture = current_user.pictures.build(picture_params)
     respond_to do |format|
       if @picture.save
         format.html { redirect_to @picture, notice: 'Picture was successfully created.' }
@@ -47,6 +46,11 @@ class PicturesController < ApplicationController
       format.html { redirect_to pictures_url, notice: 'Picture was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  def confirm
+    @picture = current_user.pictures.build(pictures_params)
+    render  :new if @pictures.invalid?
   end
 
   private
