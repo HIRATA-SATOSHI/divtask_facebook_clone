@@ -1,5 +1,5 @@
 body {
-  background-color: #fff;
+  background-color: #F5F5F5;
   color: #333;
   margin: 33px;
   font-family: verdana, arial, helvetica, sans-serif;
@@ -82,3 +82,17 @@ div {
 label {
   display: block;
 }
+
+.container-fluid {
+  background-color:#000033;
+  text-align: left;
+}
+
+.navbar-brand {
+  font-family: 'Rowdies', cursive;
+  color: antiquewhite;
+  font-size: 33px;
+  display: table-cell;
+  vertical-align: center;
+}
+
