@@ -1,16 +1,26 @@
 body {
-  background-color: #fff;
+  background-color: #F5F5F5;
   color: #333;
   margin: 33px;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  text-align: center;
+}
+
+body,
+#wrapper {
+  // display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
 }
 
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  text-align: center;
 }
 
 pre {
@@ -20,15 +30,16 @@ pre {
 }
 
 a {
-  color: #000;
+  color: white;
 
-  &:visited {
-    color: #666;
-  }
+  // &:visited {
+  //   color: #666;
+  // }
 
   &:hover {
     color: #fff;
-    background-color: #000;
+    // background-color: #333;
+    opacity: 0.4;
   }
 }
 
@@ -79,6 +90,68 @@ div {
   }
 }
 
+ul {
+  list-style: none;
+}
+
 label {
   display: block;
 }
+
+.navbar {
+  background-color: #000033;
+  font-family: 'Rowdies', cursive;
+  color: whitesmoke;
+  top: 0;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+footer {
+  background-color: #000033;
+  font-family: verdana, arial, helvetica, sans-serif;
+  text-align: center;
+  color: whitesmoke;
+  // margin-top: 50px;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  width:1400px; /* フッター幅を指定*/
+	margin:0 auto;
+}
+
+.row {
+  background-color: #DCDCDC;
+  margin-bottom: 50px;
+}
+
+.posted_comment {
+  margin-bottom: 10px;
+}
+
+.btn-group {
+  margin-top: 20px;
+
+}
+
+.btn-group btn-group-sm {
+  text-align: center;
+}
+
+.posted_picture {
+  margin-bottom: 50px;
+}
+
+
+.new_user {
+  margin-top: 80px;
+}
+
+.form-inline {
+  color: #999999;
+  margin-top: 25px;
+  position: absolute;
+  right: 0; /* 右寄せ */
+} 
