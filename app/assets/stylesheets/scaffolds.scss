@@ -83,16 +83,20 @@ label {
   display: block;
 }
 
-.container-fluid {
-  background-color:#000033;
-  text-align: left;
+.navbar {
+  background-color: #000033;
+  font-family: 'Rowdies', cursive;
+  color: whitesmoke;
 }
 
 .navbar-brand {
-  font-family: 'Rowdies', cursive;
-  color: antiquewhite;
-  font-size: 33px;
-  display: table-cell;
-  vertical-align: center;
+  font-size: 30px;
 }
 
+footer {
+  background-color: #000033;
+  font-family: verdana, arial, helvetica, sans-serif;
+  text-align: center;
+  color: whitesmoke;
+  margin-top: 40px;  
+}
