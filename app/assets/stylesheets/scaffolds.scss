@@ -123,7 +123,6 @@ footer {
 }
 
 .row {
-  text-align: center;
   background-color: #DCDCDC;
   margin-bottom: 50px;
 }
@@ -137,9 +136,14 @@ footer {
 
 }
 
+.btn-group btn-group-sm {
+  text-align: center;
+}
+
 .posted_picture {
   margin-bottom: 50px;
 }
+
 
 .new_user {
   margin-top: 80px;
